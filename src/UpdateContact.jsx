@@ -19,7 +19,7 @@ export default function UpdateContact() {
 
     try {
       const res = await fetch(
-        `http://localhost:8081/contacts/${encodeURIComponent(oldName)}`,
+        `https://cs3870-backend-i.onrender.com/contacts/${encodeURIComponent(oldName)}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -85,3 +85,4 @@ export default function UpdateContact() {
     </div>
   );
 }
+
