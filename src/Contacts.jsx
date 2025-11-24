@@ -6,7 +6,7 @@ const Contacts = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await fetch("http://localhost:8081/contacts");
+        const response = await fetch("https://cs3870-backend-i.onrender.com/contacts");
         if (!response.ok) {
           throw new Error("Failed to fetch contacts");
         }
@@ -50,3 +50,4 @@ const Contacts = () => {
   );
 };
 export default Contacts;
+
