@@ -13,7 +13,7 @@ function DeleteContact() {
     try {
       const encodedName = encodeURIComponent(trimmedName);
       console.log("EncodeURIComponent :", encodedName);
-      const res = await fetch(`http://localhost:8081/contacts/${encodedName}`, {
+      const res = await fetch(`https://cs3870-backend-i.onrender.com/contacts/${encodedName}`, {
         method: "DELETE",
       });
       const data = await res.json().catch(() => null);
@@ -51,3 +51,4 @@ function DeleteContact() {
   );
 }
 export default DeleteContact;
+
